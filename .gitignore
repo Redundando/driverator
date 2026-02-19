@@ -39,7 +39,8 @@ env/
 htmlcov/
 
 # Driverator specific
-data/driverator/
+data/
+.ai-docs/
 service-account-key.json
 *.txt
 !requirements.txt

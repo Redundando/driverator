@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "driverator"
+version = "0.1.0"
+description = "A Python library for Google Drive file operations with caching"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Arved Klöhn", email = "arved.kloehn@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "google-api-python-client>=2.0.0",
+    "google-auth>=2.0.0",
+    "cacherator>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Redundando/driverator"
+Repository = "https://github.com/Redundando/driverator"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["driverator*"]
